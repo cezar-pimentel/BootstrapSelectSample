@@ -1,0 +1,11 @@
+﻿@model BootstrapSelectSample.Model.CountryViewModel
+@{ViewBag.Title = "Bootstrap Select Sample";}
+<div class="jumbotron">
+	<h1>Bootstrap Select Sample</h1>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		@Html.LabelFor(m => m.SelectedCountry)
+		@Html.DropDownListFor(m => m.SelectedCountry, Model.Countries, new { @class = "selectpicker", data_live_search = "true" })
+	</div>
+</div>
